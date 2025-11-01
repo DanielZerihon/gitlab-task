@@ -15,7 +15,7 @@ This service wraps the GitLab API to provide two main functionalities:
 
 1. **Build the Docker image:**
    ```bash
-   cd repos/devops_project/gitlab_app
+   cd gitlab-task/
    docker build -t gitlab-api-service .
    ```
 2. **Edit the .env file**
@@ -25,7 +25,7 @@ This service wraps the GitLab API to provide two main functionalities:
    ```
 3. **Run the container:**
    ```bash
-   docker run -d \
+   docker run \
    -p 5000:5000 \
    --env-file .env \
    --name gitlab-api \
