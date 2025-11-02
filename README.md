@@ -57,12 +57,12 @@ Grant or update permissions for a user on a GitLab repository or group.
 
 Retrieve issues or merge requests created during a specific year.
 
-**Fetch all issues from 2017:**
+**Fetch all merge from 2017:**
 ```bash
 curl "http://localhost:5000/get-data?type=mr&year=2017"
 ```
 
-**Fetch all merge requests from 2017:**
+**Fetch all issues requests from 2017:**
 ```bash
 curl "http://localhost:5000/get-data?type=issues&year=2017"
 ```
